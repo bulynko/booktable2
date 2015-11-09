@@ -1,0 +1,16 @@
+meteor build ../table-build --server http://10.1.66.27 
+meteor build ../table-build --server http://10.1.66.27  --mobile-settings settings.json
+
+
+
+keytool -genkey -alias table -keyalg RSA -keysize 2048 -validity 10000
+
+
+
+cd ../table-build/android/
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 release-unsigned.apk  table
+
+
+
+/home/marcin/Android/Sdk/build-tools/23.0.1/zipalign  -f -v 4 release-unsigned.apk  table.apk
+

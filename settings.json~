@@ -1,0 +1,17 @@
+{
+    "public": {
+        "APP_VERSION": "1.0.0",
+        "APP_ID": "112299",
+        "APP_NAME": "table",
+        "PRODUCTION": true,
+        "PRODUCTION_MAIN_SERVER": "http://10.1.66.27",
+        "DEVELOPMENT_MAIN_SERVER": "http://10.1.66.27:3005"
+    },
+    "PRODUCTION_MONGO_SERVER": "mongodb://localhost:27017/meteor/",
+    "BLOB_MONGO_SERVER": null,
+    "DEVELOPMENT_MONGO_SERVER": "mongodb://localhost:27777/meteor/",
+    "DEBUG_MODE": "yes",
+    "MOCHA": "no",
+    "CUCUMBER": "no"
+}
+ 
