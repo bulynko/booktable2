@@ -8,11 +8,13 @@
 
 <body layout="column">
 
-<div>
+
+  <md-toolbar  md-scroll-shrink layout="row" layout-align="start center" layout-padding>
+
 
 <div class="logo" style="margin-left: 0px">
             <img src="/images/logo1.png">
-  </div>
+     </div>
 
 
 <div class="container" ng-if="currentUser">
@@ -21,11 +23,15 @@
     </div>
 
     <div class="container" ng-if="! currentUser">
+
+<!--
+        <md-button ng-controller="LoginCtrl" class="md-raised md-primary"  ng-href="/register" >
+        REGISTER </md-button>
+-->
+
  </div>
 
-  </div>
-   <!-- Toolbar -->
-
+  </md-toolbar>  <!-- Toolbar -->
 
 
   <div ui-view class="container-fluid">   </div>

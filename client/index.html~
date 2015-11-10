@@ -8,28 +8,26 @@
 
 <body layout="column">
 
-<div>
 
-<div class="logo" style="margin-left: 0px">
-            <img src="/images/logo1.png">
-     </div>
+ <div>
+   <div layout="raw" class="container" ng-if="!currentUser">   
+      <meteor-include src="loginButtons"></meteor-include> 
+      <md-progress-circular class="md-accent" md-mode="indeterminate"></md-progress-circular>    
+   </div>     
+   
+    <div class="container" ng-if="currentUser">   
+      <md-button ng-controller="LoginCtrl" class="md-raised md-primary"  ng-click="userLogout()" > 
+       LOGOUT </md-button>    
+    </div>    
+     
+    <span flex> <div align="center">BOOK MY PLACE {{ currentUser.emails }} </div> </span>   
 
-
-<div class="container" ng-if="currentUser">
-       <md-button ng-controller="LoginCtrl" class="md-raised md-primary"  ng-click="userLogout()" >
-        LOGOUT </md-button>
+    <div style="padding-right: 20px">
+      <a href="/locations">Locations</a>
+      <a href="/login">Lo</a>
     </div>
 
-    <div class="container" ng-if="! currentUser">
-
-
-
- </div>
-
-  </div>
-   <!-- Toolbar -->
-
-<!-- <h1 class="title">GMM Meeting Room Booking System </h1> -->
+  </div>  <!-- Toolbar -->
 
   <div ui-view class="container-fluid">   </div>
 
