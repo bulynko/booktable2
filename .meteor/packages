@@ -16,7 +16,6 @@ planettraining:material-design-icons
 momentjs:moment
 standard-minifiers
 meteor-base
-mobile-experience
 mongo
 session
 tracker
