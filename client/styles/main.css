@@ -1,4 +1,4 @@
-
+/*
 bodyremoved {
     background-image:  url(images/color-splash.jpg);
     background-size:   cover;                      /* <------ */
@@ -18,6 +18,8 @@ background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
 
+*/
+
 md-tabs-wrapper   {
 display:none ;
 
@@ -31,7 +33,7 @@ display:none ;
 
 /* Register Link */
 a#link-1 {
-     color:white;
+     color: #792A84;
      font-family: 'Raleway', sans-serif;
      font-weight: 100;
      font-size: 14px;
@@ -39,7 +41,7 @@ a#link-1 {
 /*  Meeting Room Login Page Title */
 .title {
 	margin: 0px 0px 40px 0px;	
-	color:white;
+	color: #792A84;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
   	font-weight: 100;
