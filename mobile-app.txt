@@ -1,5 +1,6 @@
 meteor build ../table-build --server http://10.1.66.27:3003 
 meteor build ../table-build --server http://10.1.66.27:3003  --mobile-settings settings.json
+meteor build ../table-build --server http://app-t.gbm.local
 
 
 
